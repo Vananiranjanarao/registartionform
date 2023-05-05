@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Registration Form</title>
+   <link rel="stylesheet" href="style.css"> 
+   <script src="script.js"></script> 
+ </head> 
+<body onload="document.form1.text1.focus()"> 
+<div class="container"> 
+ <div class="title">Registration Form</div> 
+ <form action="#" method="POST" >
+<div class="user-details"> 
+     <div class="input-box"> 
+  <span class="details">Full Name:</span> 
+<input type="text" placeholder="Enter your Name" required>
+ </div>
+  <div class="input-box">
+    <span class="details">Age:</span>
+     <input type="text" placeholder="Enter your Age" required> 
+</div>
+ <div class="input-box">
+ <span class="details">Email:</span>
+ <input type="email" placeholder="Enter your email" required onclick="ValidateEmail(document.form1.text1)"> 
+</div>
+ <div class="input-box"> 
+    <span class="details">Location:</span> 
+    <input type="location" placeholder="Enter your location" required> 
+</div>
+ <div class="input-box"> 
+    <span class="details">Password:</span> 
+<input type="text" placeholder="Enter your Password" required onclick="ValidatePassword(document.form1.text1)" id="pwrd">
+ </div> 
+ <div class="input-box"> 
+    <span class="details">Confirm Password:</span> 
+<input type="text" placeholder="Confirm your Password" required onclick="ValidatePassword(document.form1.text1)" id="pass">
+ </div> 
+</div> 
+<div class="button"></div>
+ <input type="submit" value="Submit"> 
+</form> 
+</div> 
+</body>
+ </html> 
